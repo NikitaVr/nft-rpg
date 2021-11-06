@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "solhint": "./node_modules/.bin/solhint -f table contracts/**/*.sol"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,11 @@
     "chai": "^4.2.0",
     "ethereum-waffle": "^3.0.0",
     "ethers": "^5.0.0",
-    "hardhat": "^2.6.8"
+    "hardhat": "^2.6.8",
+    "prettier": "^2.4.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.18",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "^0.0.5"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.2",
