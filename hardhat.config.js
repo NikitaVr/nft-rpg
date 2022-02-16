@@ -19,9 +19,11 @@ task('accounts', 'Prints the list of accounts', async (taskArgs, hre) => {
  */
 module.exports = {
   solidity: '0.8.0',
+  defaultNetwork: 'devnet',
   networks: {
     devnet: {
       url: `https://testnet.api.devnet.so/`,
+      accounts: ['0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80'], // account 0 private key for hardhat
       // accounts: [`${ROPSTEN_PRIVATE_KEY}`]
     },
   },
